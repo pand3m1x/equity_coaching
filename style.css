@@ -1,4 +1,16 @@
 /* Reset and base styles */
+
+:root {
+  --brand-primary-green: #a0b499;
+  --brand-secondary-green: #c1d3bb;
+  --brand-tertiary-green: #f7f9f6;
+  --brand-red: #bc2200;
+  --brand-orange: #f2620c;
+  --brand-yellow: #ffc120;
+  --brand-bg: #ffffff;
+  --brand-text: #222222;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +28,7 @@ body {
 nav {
     position: fixed;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--brand-primary-green);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 1000;
 }
@@ -32,7 +44,7 @@ nav {
 
 .logo {
     font-size: 1.5rem;
-    color: #2c3e50;
+    color: #ffffff;
 }
 
 .nav-links {
@@ -72,8 +84,10 @@ section {
     padding: 2rem;
 }
 
+/* colors : Red #bc2200 orange #f2620c yellow #ffc120 
+dark green #a0b499*/
 #hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #bc2200 0%, #ffc120 100%);
     color: white;
     text-align: center;
 }
@@ -90,7 +104,8 @@ section {
 
 .cta-button {
     display: inline-block;
-    background-color: #3498db;
+    background-color: var(--brand-primary-green);
+    border: 2px solid #ffc120;
     color: white;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
@@ -110,7 +125,7 @@ section {
 }
 
 section:nth-child(even) {
-    background-color: #f8f9fa;
+    background-color: var(--brand-tertiary-green);
 }
 
 /* Team members */
