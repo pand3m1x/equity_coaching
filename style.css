@@ -67,6 +67,8 @@ nav {
     color: #3498db;
 }
 
+
+
 /* Bottom navbar */
 #bottom-navbar {
     position: fixed;
@@ -130,17 +132,30 @@ section:nth-child(even) {
 
 /* Team members */
 .team-members {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    margin-top: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-items: center;
 }
+
 
 .member {
     background-color: white;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%;
+}
+
+.staffImg {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Form */
@@ -199,7 +214,13 @@ footer {
         font-size: 2rem;
     }
 
-    .team-members {
-        flex-direction: column;
-    }
+    .team-members { 
+        grid-template-columns: repeat(2, 1fr); 
+    } 
+}
+
+@media (max-width: 480px) { 
+    .team-members { 
+        grid-template-columns: 1fr; 
+    } 
 }
