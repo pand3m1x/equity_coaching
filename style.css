@@ -104,9 +104,11 @@ section {
 
 /* Container */
 
-.container {
+.container,
+.hero-content {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 10px 10px;
 }
 
 #about .container,
@@ -127,6 +129,7 @@ section {
 .container .info {
     flex: 1;
     text-align: left;
+    /* width: 500px; */
 }
 
 .container .image {
@@ -146,14 +149,15 @@ section {
     width: 70%;
 }
 
-/* colors : Red #bc2200 orange #f2620c yellow #ffc120 
-dark green #a0b499*/
+
+/*Hero Section*/
+
 #hero {
-    background: linear-gradient(135deg, #bfbb7d 10%,#e8e0b5 100%);
-    color: white;
+    padding-top: 70px;
+    background: linear-gradient(135deg, #e9e4c6 10%,#bfbb7d 100%);
+    color: rgb(14, 10, 10);
     text-align: center;
 }
-/*Hero Section*/
 
 .check {
     width: 50px;
@@ -172,7 +176,7 @@ dark green #a0b499*/
 }
 
 #infoChecklist {
-    width: 70%;
+    width: 80%;
 }
 
 .hero-content h1 {
@@ -315,3 +319,7 @@ footer {
     } 
 }
 
+/* code graveyard */
+
+/* a2z colors : Red #bc2200 orange #f2620c yellow #ffc120 
+dark green #a0b499*/
