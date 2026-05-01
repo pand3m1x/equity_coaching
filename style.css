@@ -57,35 +57,65 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1.2rem 2rem;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #ffffff;
     font-family: "Laila", serif;
+    letter-spacing: 1px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    gap: 2rem;
 }
 
 .nav-links li {
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
+    position: relative;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #2c3e50;
-    font-weight: bold;
-    transition: color 0.3s;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #3498db;
+    color: var(--brand-primary-yellow);
 }
 
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: var(--brand-primary-yellow);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/*top navbar*/
+#top-navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(189, 80, 13, 0.9); /* your brown */
+    backdrop-filter: blur(8px);
+
+    transition: all 0.3s ease;
+}
 
 
 /* Bottom navbar */
@@ -98,6 +128,7 @@ nav {
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
     z-index: 1000;
 }
+
 
 /* Sections */
 section {
@@ -184,7 +215,7 @@ section {
 }
 
 #childListItems{
-    padding-top: 12px;
+    padding-top: 15px;
 }
 
 i {
