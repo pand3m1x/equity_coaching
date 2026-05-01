@@ -39,6 +39,7 @@ h1, h2, h3 {
     /* color: var(--brand-primary-brown); */
     margin-bottom: 1rem;
     font-family: "Laila", serif;
+    font-weight: 600;
 }
 
 /* Navbar styles */
