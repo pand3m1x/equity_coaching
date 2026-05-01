@@ -117,6 +117,10 @@ nav {
     transition: all 0.3s ease;
 }
 
+#top-navbar.scrolled {
+    padding: 0.5rem 0;
+    background: rgba(189, 80, 13, 0.95);
+}
 
 /* Bottom navbar */
 #bottom-navbar {
