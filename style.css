@@ -35,6 +35,12 @@ body {
     padding-bottom: 70px;
 }
 
+h1, h2, h3 {
+    /* color: var(--brand-primary-brown); */
+    margin-bottom: 1rem;
+    font-family: "Laila", serif;
+}
+
 /* Navbar styles */
 nav {
     position: fixed;
@@ -56,6 +62,7 @@ nav {
 .logo {
     font-size: 1.5rem;
     color: #ffffff;
+    font-family: "Laila", serif;
 }
 
 .nav-links {
@@ -173,6 +180,14 @@ section {
     gap: 0.75rem;
     list-style: none;
     margin-bottom: 1rem;
+}
+
+#childListItems{
+    padding-top: 12px;
+}
+
+i {
+    padding-right: -5px;
 }
 
 #infoChecklist {
