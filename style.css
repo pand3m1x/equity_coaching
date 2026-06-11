@@ -358,6 +358,52 @@ section:nth-child(even) {
     margin: 0 auto;
 }
 
+/*6cs Image */
+#EquityMindsetImage {
+    /* width: 100%;
+    max-width: 600px; */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Partnerships */
+
+.partner-row,
+.partner-row_reverse {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.partner-row {
+    flex-direction: row;
+}
+
+.partner-row_reverse {
+    flex-direction: row-reverse;
+}
+
+.partner-row .image,
+.partner-row_reverse .image {
+    flex: 0 0 35%;
+}
+
+/* .partner-row .info,
+.partner-row_reverse .info {
+    flex: 1;
+    text-align: left;
+}
+
+.partner-row .image img,
+.partner-row_reverse .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+} */
+
 /* Form */
 form {
     max-width: 500px;
@@ -432,6 +478,26 @@ footer {
     .team-members { 
         grid-template-columns: 1fr; 
     } 
+}
+
+@media (max-width: 768px) {
+    .partner-row,
+    .partner-row_reverse {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partner-row .image,
+    .partner-row_reverse .image {
+        flex: none;
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .partner-row .info,
+    .partner-row_reverse .info {
+        width: 100%;
+    }
 }
 
 /* code graveyard */
