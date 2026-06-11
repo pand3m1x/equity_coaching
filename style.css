@@ -375,34 +375,34 @@ section:nth-child(even) {
     display: flex;
     align-items: center;
     gap: 3rem;
-    margin-bottom: 5rem;
+    margin-left: 20%;
 }
 
 .partner-row {
     flex-direction: row;
 }
 
-.partner-row_reverse {
+/* .partner-row_reverse {
     flex-direction: row-reverse;
-}
+} */
 
 .partner-row .image,
 .partner-row_reverse .image {
     flex: 0 0 35%;
 }
 
-/* .partner-row .info,
-.partner-row_reverse .info {
-    flex: 1;
-    text-align: left;
+#partners h2{
+    font-size: 2.5rem;
+    max-width: 600px;
+    margin: 20px;
+    color: var(--brand-primary-brown)
 }
 
-.partner-row .image img,
-.partner-row_reverse .image img {
-    width: 100%;
-    height: auto;
-    display: block;
-} */
+#partners a {
+    color: var(--brand-primary-orange);
+    text-decoration: none;
+    font-weight: 500;
+}
 
 /* Form */
 form {
