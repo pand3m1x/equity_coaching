@@ -319,6 +319,33 @@ section {
     background-color: #2980b9;
 }
 
+
+/*column checklist*/
+.column {
+    float: left;
+    }
+
+    /* Set width length for the left, right and middle columns */
+    .left {
+    width: 15%;
+    margin-right: -5px;
+    margin-left:20px;
+    }
+
+    .middle {
+    width: 25%;
+    }
+    
+    .right {
+    width: 75%;
+    }
+
+    /* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    } */
+
 /* Container */
 .container {
     max-width: 1200px;
