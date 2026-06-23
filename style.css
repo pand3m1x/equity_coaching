@@ -203,7 +203,7 @@ section {
 .hero-content {
     max-width: 1500px;
     margin: 0 auto;
-    /* padding: 10px 10px; */
+    padding: 10px 10px;
 }
 
 #about .container,
@@ -211,10 +211,11 @@ section {
 #partners .container,
 .hero-content {
     display: flex;
-    align-items: flex-start;
+    /* align-items: center; */
     justify-content: center;
     gap: 3rem;
 }
+
 
 .container li {
     list-style: square;
@@ -371,11 +372,11 @@ section {
     } */
 
 /* Container */
-.container {
+/* .container {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-}
+} */
 
 section:nth-child(even) {
     background-color: var(--brand-tertiary-yellowgreen);
@@ -485,21 +486,24 @@ button:hover {
 }
 
 #contact h2{
-    margin-left: 25%;
+    margin-left: 41%;
 }
 
 /* Footer */
 footer {
     background-color: var(--brand-primary-orange);
     color: white;
-    /* justify-content: center;
-    text-align: center; */
-    padding: .75rem;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    padding-left: 30%;
 }
 
-footer p {
+/* footer p {
     margin-left: 27%;
-}
+} */
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -524,6 +528,33 @@ footer p {
         grid-template-columns: repeat(2, 1fr); 
     } 
 
+    @media (max-width: 768px) {
+        .partner-row,
+        .partner-row_reverse {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .partner-row .image,
+        .partner-row_reverse .image {
+            flex: none;
+            width: 100%;
+            max-width: 450px;
+        }
+    
+        .partner-row .info,
+        .partner-row_reverse .info {
+            width: 100%;
+        }
+
+        #contact h2{
+            margin-left: 0%;
+        }
+        footer {
+            padding-left: 5%;
+        }
+    }
+
     .container {
         flex-direction: column;
         text-align: center;
@@ -534,31 +565,14 @@ footer p {
     }
 }
 
+/*super small screens*/
+
 @media (max-width: 480px) { 
     .team-members { 
         grid-template-columns: 1fr; 
     } 
 }
 
-@media (max-width: 768px) {
-    .partner-row,
-    .partner-row_reverse {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .partner-row .image,
-    .partner-row_reverse .image {
-        flex: none;
-        width: 100%;
-        max-width: 450px;
-    }
-
-    .partner-row .info,
-    .partner-row_reverse .info {
-        width: 100%;
-    }
-}
 
 /* code graveyard */
 
