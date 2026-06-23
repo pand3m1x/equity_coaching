@@ -273,6 +273,9 @@ section {
     background: linear-gradient(135deg, #e9e4c6 10%,#bfbb7d 100%);
     color: rgb(14, 10, 10);
     text-align: center;
+    padding-left: 45px;
+    padding-right: 25px;
+    /* padding-top: 10px; */
 }
 
 .check {
@@ -427,7 +430,7 @@ section:nth-child(even) {
     display: flex;
     align-items: center;
     gap: 3rem;
-    margin-left: 20%;
+    margin-left: 18%;
 }
 
 .partner-row {
@@ -499,6 +502,7 @@ footer {
     text-align: center;
 
     padding-left: 30%;
+    padding-bottom: 2px;
 }
 
 /* footer p {
@@ -528,31 +532,52 @@ footer {
         grid-template-columns: repeat(2, 1fr); 
     } 
 
-    @media (max-width: 768px) {
-        .partner-row,
-        .partner-row_reverse {
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .partner-row .image,
-        .partner-row_reverse .image {
-            flex: none;
-            width: 100%;
-            max-width: 450px;
-        }
-    
-        .partner-row .info,
-        .partner-row_reverse .info {
-            width: 100%;
-        }
+    .hero-content {
+        /* position: relative; */
+        flex-direction: column;
+        text-align: center;
+    }
 
-        #contact h2{
-            margin-left: 0%;
-        }
-        footer {
-            padding-left: 5%;
-        }
+    #logo-wrapper {
+        width: 400px;
+        max-width: 100%;
+
+        padding-left: 25%;
+    }
+
+    #logo-wrapper img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #infoChecklist {
+        padding-top: 2rem;
+    }
+
+    .partner-row,
+    .partner-row_reverse {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partner-row .image,
+    .partner-row_reverse .image {
+        flex: none;
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .partner-row .info,
+    .partner-row_reverse .info {
+        width: 100%;
+    }
+
+    #contact h2{
+        margin-left: 0%;
+    }
+    footer {
+        padding-left: 5%;
     }
 
     .container {
