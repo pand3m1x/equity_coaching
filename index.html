@@ -391,18 +391,41 @@
 </section>
     <!-- ✦•······················•✦CONTACT✦•······················•✦ -->
     <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <!-- <p>Get in touch to learn more.</p> -->
-        <form>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <textarea placeholder="Message"></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </div>
-    </section>
+ <section id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+
+    <form id="contactForm" name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
+
+      <input
+        type="text"
+        name="name"
+        placeholder="Name"
+        required
+      />
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        required
+      />
+
+      <textarea
+        name="message"
+        placeholder="Message"
+        required
+      ></textarea>
+
+      <button type="submit">Send</button>
+
+      <p id="successMessage" style="display:none;">
+        Thank you! Your message has been sent.
+      </p>
+    </form>
+  </div>
+</section>
 
     <!-- ✦•······················•✦FOOTER✦•······················•✦ -->
     <!-- Footer -->
