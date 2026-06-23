@@ -175,7 +175,15 @@ nav {
     background-color: white;
     box-shadow: 0 -2px 5px rgba(44, 41, 41, 0.638);
     z-index: 1000;
+    /* padding-left: 40%; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* #nav-container {
+} */
 
 
 /* Sections */
